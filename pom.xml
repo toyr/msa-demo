@@ -23,6 +23,7 @@
 
     <modules>
         <module>msa-hello</module>
+        <module>node-test</module>
     </modules>
 
     <dependencies>
