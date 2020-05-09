@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        #启动所有端点
+        include: "*"
+      #自定义管理端点路径
+      base-path: /manage
+info:
+  app:
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
