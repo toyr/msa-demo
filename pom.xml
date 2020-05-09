@@ -25,6 +25,8 @@
         <module>msa-hello</module>
         <module>node-test</module>
         <module>zookeepr-test</module>
+        <module>msa-sample-api</module>
+        <module>msa-framework</module>
     </modules>
 
     <dependencies>
