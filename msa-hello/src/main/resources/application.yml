@@ -12,3 +12,7 @@ info:
     name: @project.name@
     description: @project.description@
     version: @project.version@
+#  git:
+#    branch: @git.branch@
+#    commit: @git.commit.id@
+#    time: @git.commit.time@
