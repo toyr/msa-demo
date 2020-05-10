@@ -27,6 +27,7 @@
         <module>zookeepr-test</module>
         <module>msa-sample-api</module>
         <module>msa-framework</module>
+        <module>msa-sample-web</module>
     </modules>
 
     <dependencies>
