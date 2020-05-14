@@ -45,13 +45,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>-->
-            <plugin>
+            <!--spring-boot-starter-parent已经依赖了pl.project13.maven-->
+            <!--<plugin>
                 <groupId>pl.project13.maven</groupId>
                 <artifactId>git-commit-id-plugin</artifactId>
-                <!--<configuration>
+                &lt;!&ndash;<configuration>
                     <dotGitDirectory>${project.basedir}/../.git</dotGitDirectory>
-                </configuration>-->
-            </plugin>
+                </configuration>&ndash;&gt;
+            </plugin>-->
         </plugins>
     </build>
 

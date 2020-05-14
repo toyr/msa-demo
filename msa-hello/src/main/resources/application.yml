@@ -16,3 +16,6 @@ info:
 #    branch: @git.branch@
 #    commit: @git.commit.id@
 #    time: @git.commit.time@
+spring:
+  jackson:
+    time-zone: Asia/Shanghai
