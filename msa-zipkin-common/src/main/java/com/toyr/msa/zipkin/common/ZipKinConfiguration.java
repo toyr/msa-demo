@@ -3,6 +3,7 @@ package com.toyr.msa.zipkin.common;
 import com.github.kristofa.brave.Brave;
 import com.github.kristofa.brave.http.HttpRequest;
 import com.github.kristofa.brave.http.SpanNameProvider;
+import com.github.kristofa.brave.mysql.MySQLStatementInterceptorManagementBean;
 import com.github.kristofa.brave.spring.BraveClientHttpRequestInterceptor;
 import com.github.kristofa.brave.spring.ServletHandlerInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,5 +81,10 @@ public class ZipKinConfiguration implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(serverInterceptor);
+    }
+
+    @Bean
+    public MySQLStatementInterceptorManagementBean mySQLStatementInterceptorManagementBean() {
+        return new MySQLStatementInterceptorManagementBean(brave().clientTracer());
     }
 }

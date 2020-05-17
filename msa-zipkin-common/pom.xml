@@ -42,6 +42,11 @@
             <artifactId>zipkin-sender-okhttp3</artifactId>
             <version>0.6.12</version>
         </dependency>
+        <dependency>
+            <groupId>io.zipkin.brave</groupId>
+            <artifactId>brave-mysql</artifactId>
+            <version>4.0.6</version>
+        </dependency>
     </dependencies>
 
 

@@ -5,9 +5,11 @@ spring:
     admin:
       client:
         url: http://localhost:8081
-server:
-  port: 8080
-
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/demo?useSSL=false&statementInterceptors=com.github.kristofa.brave.mysql.MySQLStatementInterceptor&zipkinServiceName=mysql
+    username: root
+    password: root
 management:
   endpoints:
     web:
@@ -20,3 +22,6 @@ management:
 zipkin:
   endpoint: http://localhost:9411/api/v1/spans
   service: hello
+
+server:
+  port: 8080
