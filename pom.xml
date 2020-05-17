@@ -30,6 +30,9 @@
         <module>msa-framework</module>
         <module>msa-sample-web</module>
         <module>spring-boot-admin</module>
+        <module>msa-foo</module>
+        <module>msa-bar</module>
+        <module>msa-zipkin-common</module>
     </modules>
 
     <dependencyManagement>

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
 @RestController
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.toyr.msa")
 public class MsaHelloApplication {
 
     @GetMapping("/hello")

@@ -1,0 +1,8 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: bar
+zipkin:
+  endpoint: http://localhost:9411/api/v1/spans
+  service: bar

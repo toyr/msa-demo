@@ -16,3 +16,7 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+
+zipkin:
+  endpoint: http://localhost:9411/api/v1/spans
+  service: hello
