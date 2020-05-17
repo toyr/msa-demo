@@ -33,6 +33,7 @@
         <module>msa-foo</module>
         <module>msa-bar</module>
         <module>msa-zipkin-common</module>
+        <module>msa-client</module>
     </modules>
 
     <dependencyManagement>

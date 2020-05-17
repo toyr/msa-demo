@@ -1,0 +1,10 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: com.toyr.msa.client
+
+client:
+  root-uri: http://localhost:8080
+  connect-timeout: 1000
+  read-timeout: 1000
